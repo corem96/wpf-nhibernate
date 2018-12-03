@@ -1,0 +1,16 @@
+<Application x:Class="GymControl2.Aplication.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:GymControl2.Aplication"
+             StartupUri="View/MainView.xaml"
+             d1p1:Ignorable="d"
+             xmlns:d1p1="http://schemas.openxmlformats.org/markup-compatibility/2006">
+  <Application.Resources>
+    <ResourceDictionary>
+      <xsm:ViewModelLocator x:Key="Locator"
+                           d:IsDataSource="True"
+                           xmlns:xsm="clr-namespace:GymControl2.Aplication.ViewModel"/>
+    </ResourceDictionary>
+  </Application.Resources>
+</Application>
