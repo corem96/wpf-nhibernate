@@ -99,11 +99,13 @@ namespace GymControl2.Aplication.ViewModel
 
             var users = _dataUsers.GetAll();// as List<User>;
 
-            var userID = users.Where(m => m.UserName == UserName)
+            var user = users.Where(m => m.UserName == UserName)
                 .Where(x => x.Password == password)
                 .SingleOrDefault();
 
-            IsAuthenticated = true;
+            if(user.Id > 0)
+                IsAuthenticated = true;
+
         }
     }
 }

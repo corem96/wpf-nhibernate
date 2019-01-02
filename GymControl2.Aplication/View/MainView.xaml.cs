@@ -32,7 +32,10 @@ namespace GymControl2.Aplication
                 switch (message.Notification)
                 {
                     case "CloseWindow":
-                        Messenger.Default.Send(new NotificationMessage);
+                        Messenger.Default.Send(new NotificationMessage("close"));
+                        break;
+                    default:
+                        break;
                 }
             });
         }
